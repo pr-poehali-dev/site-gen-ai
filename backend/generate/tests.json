@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "name": "Generate HTML5 snake game",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "prompt": "игра Snake с неоновой графикой",
+        "history": []
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "code": "string",
+        "reply": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
